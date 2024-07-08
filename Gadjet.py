@@ -1,6 +1,5 @@
 class Gadjet:
     def __init__(self, brand, color, gb, year):
-        super().__init__(brand, year, gb, color)
         self.__brand = brand
         self.__color = color
         self.__gb = gb
@@ -31,16 +30,16 @@ class Gadjet:
         self.__gb = gb
 
     def get_info(self):
-        print(f"height: {self.get_brand()}\n"
-              f"width: {self.get_color()}\n"
-              f"square: {self.get_gb()}\n"
-              f"floor: {self.get_year()}")
+        print(f"brand: {self.get_brand()}\n"
+              f"color: {self.get_color()}\n"
+              f"gb: {self.get_gb()}\n"
+              f"year: {self.get_year()}")
 
 
 
 class Laptop(Gadjet):
     def __init__(self, brand, color, gb, year):
-        super().__init__(brand, year, gb, color)
+
         self.__brand = brand
         self.__color = color
         self.__gb = gb
@@ -71,14 +70,13 @@ class Laptop(Gadjet):
         self.__gb = gb
 
     def get_info(self):
-        print(f"height: {self.get_brand()}\n"
-              f"width: {self.get_color()}\n"
-              f"square: {self.get_gb()}\n"
-              f"floor: {self.get_year()}")
+        print(f"brand: {self.get_brand()}\n"
+              f"color: {self.get_color()}\n"
+              f"gb: {self.get_gb()}\n"
+              f"year: {self.get_year()}")
 
 class Mapcase(Gadjet):
     def __init__(self, brand, color, gb, year):
-        super().__init__(brand, year, gb, color)
         self.__brand = brand
         self.__color = color
         self.__gb = gb
@@ -109,7 +107,11 @@ class Mapcase(Gadjet):
         self.__gb = gb
 
     def get_info(self):
-        print(f"height: {self.get_brand()}\n"
-              f"width: {self.get_color()}\n"
-              f"square: {self.get_gb()}\n"
-              f"floor: {self.get_year()}")
+        print(f"brand: {self.get_brand()}\n"
+              f"color: {self.get_color()}\n"
+              f"gd: {self.get_gb()}\n"
+              f"year: {self.get_year()}")
+
+redmi = Gadjet("Redmi", "Blue", "32", "2016")
+laptop = Laptop("lenovo", "grey", "128", "2014")
+plansh = Mapcase("iphone", "white", "64", "2018")
