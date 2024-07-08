@@ -1,7 +1,7 @@
 class Car:
 
     def __init__(self, brand, color, max_speed, year):
-        super().__init__(brand, color, max_speed, year)
+
         self.__brand = brand
         self.__color = color
         self.__max_speed = max_speed
@@ -36,3 +36,5 @@ class Car:
               f"width: {self.get_color()}\n"
               f"square: {self.get_max_speed()}\n"
               f"floor: {self.get_year()}")
+
+car = Car('BMW', "red", "278", "2017")
